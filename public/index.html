@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slide-button-container">
+            <div class="slide-button" onclick="toggleSlideButton()"></div>
+        </div>
+
+        <div id="register" class="form-container active">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Username">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div id="login" class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="welcome" style="display: none;">
+            <h2>Welcome</h2>
+            <p id="welcomeMessage"></p>
+        </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

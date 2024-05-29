@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/bg01.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+.form-container {
+    display: none;
+}
+.form-container.active {
+    display: block;
+}
+.form-container input {
+    display: block;
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #45a049;
+}
+.slide-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.slide-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: #d3c4f3;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide-button::before {
+    content: '註冊';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 30px;
+    background-color: #f3c4d4;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+.slide-button.active {
+    background-color: #f3c4d4;
+}
+.slide-button.active::before {
+    content: '登入';
+    left: 80px;
+    background-color: #d3c4f3;
+}
